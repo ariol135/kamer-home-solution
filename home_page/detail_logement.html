@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Présentation du Logement - LaMaison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900 bg-gray-100">
+
+    <!-- Container principal -->
+    <div class="max-w-6xl p-6 mx-auto mt-10 bg-white rounded-lg shadow-lg">
+
+        <!-- Titre et prix -->
+        <div class="mb-6">
+            <h1 class="text-3xl font-bold text-green-800">Appartement Moderne au Centre-ville</h1>
+            <p class="mt-2 text-2xl font-semibold text-green-800">150 000 €</p>
+        </div>
+
+        <!-- Galerie d'images -->
+        <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+            <img src="./image/pexels-fotoaibe-1571468.jpg" alt="Salon" class="rounded-lg shadow-md">
+            <img src="./image/pexels-quark-studio-1159039-2506986.jpg" alt="Cuisine" class="rounded-lg shadow-md">
+            <img src="./image/pexels-houzlook-3797991.jpg" alt="Chambre" class="rounded-lg shadow-md">
+        </div>
+
+        <!-- Description -->
+        <div class="mb-6">
+            <h2 class="mb-3 text-2xl font-bold text-green-800">Description</h2>
+            <p class="leading-relaxed text-gray-700">
+                Cet appartement moderne situé au centre-ville vous offre un cadre de vie exceptionnel. 
+                Il dispose d’un salon spacieux, d’une cuisine équipée, de deux chambres lumineuses et d’une salle de bain moderne. 
+                Parfait pour une famille ou un couple à la recherche de confort et de commodités urbaines.
+            </p>
+        </div>
+
+        <!-- Caractéristiques -->
+        <div class="mb-6">
+            <h2 class="mb-3 text-2xl font-bold text-green-800">Caractéristiques</h2>
+            <ul class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                <li class="flex items-center">
+                    <span class="font-semibold text-green-800">Superficie :</span> <span class="ml-2">100 m²</span>
+                </li>
+                <li class="flex items-center">
+                    <span class="font-semibold text-green-800">Chambres :</span> <span class="ml-2">2</span>
+                </li>
+                <li class="flex items-center">
+                    <span class="font-semibold text-green-800">Salles de bain :</span> <span class="ml-2">1</span>
+                </li>
+                <li class="flex items-center">
+                    <span class="font-semibold text-green-800">Parking :</span> <span class="ml-2">Oui</span>
+                </li>
+                <li class="flex items-center">
+                    <span class="font-semibold text-green-800">Piscine :</span> <span class="ml-2">Non</span>
+                </li>
+                <li class="flex items-center">
+                    <span class="font-semibold text-green-800">Balcon :</span> <span class="ml-2">Oui</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact et Boutons -->
+        <div class="flex flex-col items-center md:flex-row md:justify-between">
+            <div class="mb-4 md:mb-0">
+                <p class="font-bold text-green-800">Contact :</p>
+                <p class="text-gray-700">Agent : Ngpupayou Aristide</p>
+                <p class="text-gray-700">Téléphone : +237 6 93 37 31 02 </p>
+                <p class="text-gray-700">Email : contact@lamaison.com</p>
+            </div>
+            <div class="space-x-4">
+                <a href="mailto:contact@lamaison.com" class="px-6 py-3 text-white transition bg-green-800 rounded-md hover:bg-green-700">
+                    Contacter l'agent
+                </a>
+                <a href="./home_page.html" class="px-6 py-3 text-gray-900 transition bg-gray-300 rounded-md hover:bg-gray-400">
+                    Retour aux annonces
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

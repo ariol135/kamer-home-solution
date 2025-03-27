@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="w-full p-8 bg-white rounded-lg shadow-lg sm:w-96">
+        <h2 class="mb-6 text-2xl font-semibold text-center">Inscription LaMaiosn</h2>
+
+        <form action="#" method="POST">
+            <!-- Champ Nom -->
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Nom complet</label>
+                <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <!-- Champ Email -->
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Adresse email</label>
+                <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <!-- Champ Mot de passe -->
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+                <input type="password" id="password" name="password" required class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <!-- Champ Confirmer le mot de passe -->
+            <div class="mb-4">
+                <label for="confirm_password" class="block text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
+                <input type="password" id="confirm_password" name="confirm_password" required class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <!-- Bouton d'inscription -->
+            <div class="mb-4">
+                <button type="submit" class="w-full py-3 font-semibold text-white bg-green-800 rounded-md hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    S'inscrire
+                </button>
+            </div>
+
+            <p class="text-sm text-center text-gray-600">
+                Vous avez déjà un compte ? <a href="./login_page.html" class="text-green-800 hover:underline">Se connecter</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

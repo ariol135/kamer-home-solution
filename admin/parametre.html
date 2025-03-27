@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres - Agence Immobilière</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 p-5 text-white bg-green-800">
+            <h2 class="mb-6 text-2xl font-bold">Agence Immobilière</h2>
+            <nav>
+                <ul>
+                    <li class="mb-4">
+                        <a href="./dashbord.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            🏠 Tableau de Bord
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="annonces.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            📋 Annonces
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="./utilisateurs.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            👥 Utilisateurs
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="./utilisateurs.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            ⚙️ Paramètres
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenu Principal -->
+        <main class="flex-1 p-6">
+            <header class="mb-6">
+                <h1 class="text-3xl font-semibold">Paramètres</h1>
+            </header>
+            <div class="flex min-h-screen">
+                <!-- Sidebar -->
+                <aside class="w-64 p-5 text-white bg-green-800">
+                    <h2 class="mb-6 text-2xl font-bold">Agence Immobilière</h2>
+                    <nav>
+                        <ul>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">🏠 Tableau de Bord</a></li>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">📋 Annonces</a></li>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">👥 Utilisateurs</a></li>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">⚙️ Paramètres</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+        
+                <!-- Contenu Principal -->
+                <main class="flex-1 p-6">
+                    <header class="flex items-center justify-between mb-6">
+                        <h1 class="text-3xl font-semibold">Paramètres</h1>
+                    </header>
+        
+                    <!-- Paramètres Générales -->
+                    <section class="p-6 mb-6 bg-white rounded shadow">
+                        <h2 class="mb-4 text-xl font-semibold">Informations Générales</h2>
+                        <form action="#" method="POST">
+                            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                                <div class="flex flex-col">
+                                    <label for="company-name" class="text-sm font-medium">Nom de l'Agence</label>
+                                    <input type="text" id="company-name" name="company-name" class="p-3 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nom de l'agence">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="contact-email" class="text-sm font-medium">Email de Contact</label>
+                                    <input type="email" id="contact-email" name="contact-email" class="p-3 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="exemple@domain.com">
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <button type="submit" class="px-6 py-3 text-white bg-green-800 rounded hover:bg-green-800">Sauvegarder les Modifications</button>
+                            </div>
+                        </form>
+                    </section>
+        
+                    <!-- Paramètres des Notifications -->
+                    <section class="p-6 mb-6 bg-white rounded shadow">
+                        <h2 class="mb-4 text-xl font-semibold">Paramètres des Notifications</h2>
+                        <form action="#" method="POST">
+                            <div class="flex items-center mb-4">
+                                <input type="checkbox" id="email-notifications" name="email-notifications" class="w-5 h-5 text-green-800 rounded focus:ring-green-800">
+                                <label for="email-notifications" class="ml-3 text-sm font-medium">Recevoir des notifications par email</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input type="checkbox" id="sms-notifications" name="sms-notifications" class="w-5 h-5 text-green-800 rounded focus:ring-green-800">
+                                <label for="sms-notifications" class="ml-3 text-sm font-medium">Recevoir des notifications par SMS</label>
+                            </div>
+                            <div class="mt-6">
+                                <button type="submit" class="px-6 py-3 text-white bg-green-800 rounded hover:bg-green-800">Sauvegarder les Modifications</button>
+                            </div>
+                        </form>
+                    </section>
+        
+                    <!-- Paramètres de Sécurité -->
+                    <section class="p-6 bg-white rounded shadow">
+                        <h2 class="mb-4 text-xl font-semibold">Paramètres de Sécurité</h2>
+                        <form action="#" method="POST">
+                            <div class="flex flex-col mb-4">
+                                <label for="current-password" class="text-sm font-medium">Mot de passe actuel</label>
+                                <input type="password" id="current-password" name="current-password" class="p-3 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Entrez votre mot de passe actuel">
+                            </div>
+                            <div class="flex flex-col mb-4">
+                                <label for="new-password" class="text-sm font-medium">Nouveau mot de passe</label>
+                                <input type="password" id="new-password" name="new-password" class="p-3 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Entrez un nouveau mot de passe">
+                            </div>
+                            <div class="flex flex-col mb-6">
+                                <label for="confirm-password" class="text-sm font-medium">Confirmer le mot de passe</label>
+                                <input type="password" id="confirm-password" name="confirm-password" class="p-3 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Confirmer le nouveau mot de passe">
+                            </div>
+                            <div class="mt-6">
+                                <button type="submit" class="px-6 py-3 text-white bg-blue-600 rounded hover:bg-blue-700">Mettre à jour le mot de passe</button>
+                            </div>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        
+        </main>
+    </div>
+
+</body>
+</html>

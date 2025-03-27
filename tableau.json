@@ -1,0 +1,31 @@
+[
+    {
+      "titre": "Villa de Luxe",
+      "description": "Superbe villa avec piscine privée et jardin.",
+      "prix": "200 000 FCFA",
+      "image": "./image/pexels-fotoaibe-1571468.jpg",
+      "lien": "./detail_logement.html"
+    },
+    {
+      "titre": "Villa de Luxe",
+      "description": "Superbe villa avec piscine privée et jardin.",
+      "prix": "425 000 FCFA",
+      "image": "./image/pexels-quark-studio-1159039-2506986.jpg",
+      "lien": "./detail_logement.html"
+    },
+    {
+      "titre": "Villa de Luxe",
+      "description": "Superbe villa avec piscine privée et jardin.",
+      "prix": "150 000 FCFA",
+      "image": "./image/01.jpg",
+      "lien": "./detail_logement.html"
+    },
+    {
+      "titre": "Villa de Luxe",
+      "description": "Superbe villa avec piscine privée et jardin.",
+      "prix": "200 000 FCFA",
+      "image": "./image/pexels-homelane-com-492179-1776574.jpg",
+      "lien": "./detail_logement.html"
+    }
+  ]
+  

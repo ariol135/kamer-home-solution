@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="bg-blue-500">linisispodnan</h2>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin LaMaison</title>
+  <!-- Intégration de Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="p-3 text-white bg-green-800">
+    <div class="container flex items-center justify-between mx-auto">
+      <h1 class="text-2xl font-bold">LaMaison Immo</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="./dashbord.html" class="hover:underline">Tableau de bord</a></li>
+          <li><a href="./annonces.html" class="hover:underline">propriétés</a></li>
+          <li><a href="./utilisateurs.html" class="hover:underline">Utilisateurs</a></li>
+          <li><a href="./parametre.html" class="hover:underline">Parametre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="mb-4 text-4xl font-bold">Bienvenue a votre tableau de bord </h2>
+      <p class="mb-8 text-lg">Gérez vos propriétés, utilisateurs et paramètres facilement grâce à notre interface intuitive.</p>
+      <a href="./dashbord.html" class="px-4 py-2 text-white transition bg-green-800 rounded hover:bg-green-800">
+        Aller au tableau de bord.
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-12">
+    <div class="container grid grid-cols-1 gap-8 mx-auto md:grid-cols-3">
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="mb-2 text-xl font-bold"> tableau de bord</h3>
+        <p>Aperçu des statistiques immobilières et des activités récentes.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="mb-2 text-xl font-bold">Annonces immobilières</h3>
+        <p>Ajoutez, modifiez ou supprimez des annonces immobilières en toute simplicité..</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="mb-2 text-xl font-bold">Gestion des utilisateurs</h3>
+        <p>Gérez efficacement les profils des agents et des clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 mt-12 text-white bg-green-800">
+    <div class="container mx-auto text-center">
+      &copy; Agence Immobilière 2025. Tous droits réservés.
+    </div>
+  </footer>
+
+</body>
+</html>

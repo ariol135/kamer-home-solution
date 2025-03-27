@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accueil - LaMaison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900 bg-gray-100">
+
+    <!-- Barre de navigation -->
+    <header class="py-4 text-white bg-green-800 shadow-lg">
+        <div class="container flex items-center justify-between px-6 mx-auto">
+            <h1 class="text-3xl font-bold">LaMaison</h1>
+            <nav class="space-x-6">
+                <a href="./home_page.html" class="hover:underline">Accueil</a>
+                <a href="./home_page.html" class="hover:underline">Annonces</a>
+                <a href="./home_page.html" class="hover:underline">Paramètres</a>
+                <a href="./login_page/login_page.html" class="px-4 py-2 text-green-800 transition bg-white rounded-md hover:bg-green-700 hover:text-white">Se connecter</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Héros -->
+    <section class="py-20 text-center text-white bg-green-800">
+        <h2 class="mb-4 text-4xl font-bold">Find Your Dream Home In One Click !</h2>
+        <p class="mb-6 text-lg">Découvrez les meilleures propriétés à vendre ou à louer du Cameroun avec LaMaison.</p>
+        <a href="./home_page.html" class="px-6 py-3 text-lg font-semibold text-green-800 transition bg-white rounded-md hover:bg-green-700 hover:text-white">Voir les annonces</a>
+    </section>
+
+    <!-- Section Annonces Populaires -->
+    <section class="container px-6 py-12 mx-auto">
+        <h3 class="mb-8 text-3xl font-semibold text-center text-green-800">Annonces recentes </h3>
+
+        <div class="grid gap-6 md:grid-cols-3">
+            <!-- Carte 1 -->
+            <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                <img src="https://source.unsplash.com/400x300/?house" alt="Maison" class="w-full">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold text-green-800">Villa de Luxe</h4>
+                    <p class="mt-2 text-gray-600">Située en bord de mer, avec piscine privée.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold text-green-800">200 000 FCFA</span>
+                        <a href="#" class="text-green-800 hover:underline">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                <img src="https://source.unsplash.com/400x300/?apartment" alt="Appartement" class="w-full">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold text-green-800">Appartement Moderne</h4>
+                    <p class="mt-2 text-gray-600">Au centre-ville avec vue imprenable.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold text-green-800">150 000 FCFA</span>
+                        <a href="#" class="text-green-800 hover:underline">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                <img src="https://source.unsplash.com/400x300/?building" alt="Bureau" class="w-full">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold text-green-800">Bureaux Équipés</h4>
+                    <p class="mt-2 text-gray-600">Idéal pour les startups et entreprises.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold text-green-800">100 000 FCFA</span>
+                        <a href="#" class="text-green-800 hover:underline">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="py-12 text-center text-white bg-green-800">
+        <h3 class="mb-4 text-3xl font-semibold">Contactez-nous</h3>
+        <p class="mb-6">Des questions ? Notre équipe est là pour vous aider.</p>
+        <a href="mailto:contact@lamaison.com" class="px-6 py-3 text-lg font-semibold text-green-800 transition bg-white rounded-md hover:bg-green-700 hover:text-white">Envoyer un email</a>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="py-4 text-center text-white bg-gray-900">
+        <p>© 2025 LaMaison. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

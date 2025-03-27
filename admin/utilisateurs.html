@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilisateurs - Agence Immobilière</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 p-5 text-white bg-green-800">
+            <h2 class="mb-6 text-2xl font-bold">Agence Immobilière</h2>
+            <nav>
+                <ul>
+                    <li class="mb-4">
+                        <a href="./dashbord.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            🏠 Tableau de Bord
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="annonces.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            📋 Annonces
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="utilisateurs.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            👥 Utilisateurs
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="parametre.html" class="block w-full p-2 text-left rounded hover:bg-blue-700">
+                            ⚙️ Paramètres
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenu Principal -->
+        <main class="flex-1 p-6">
+            <header class="mb-6">
+                <h1 class="text-3xl font-semibold">Utilisateurs</h1>
+            </header>
+
+            <div class="flex min-h-screen">
+                <!-- Sidebar -->
+                <aside class="w-64 p-5 text-white bg-green-800">
+                    <h2 class="mb-6 text-2xl font-bold">Agence Immobilière</h2>
+                    <nav>
+                        <ul>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">🏠 Tableau de Bord</a></li>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">📋 Annonces</a></li>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">👥 Utilisateurs</a></li>
+                            <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-blue-700">⚙️ Paramètres</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+        
+                <!-- Contenu Principal -->
+                <main class="flex-1 p-6">
+                    <header class="flex items-center justify-between mb-6">
+                        <h1 class="text-3xl font-semibold">Gestion des Utilisateurs</h1>
+                        <button class="px-4 py-2 text-white bg-green-800 rounded hover:bg-green-800">Ajouter un Utilisateur</button>
+                    </header>
+        
+                    <!-- Liste des Utilisateurs -->
+                    <section class="p-6 bg-white rounded shadow">
+                        <h2 class="mb-4 text-xl font-semibold">Liste des Utilisateurs</h2>
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="p-3 text-left">Nom</th>
+                                    <th class="p-3 text-left">Email</th>
+                                    <th class="p-3 text-left">Rôle</th>
+                                    <th class="p-3 text-left">Statut</th>
+                                    <th class="p-3 text-left">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="p-3">Jean Dupont</td>
+                                    <td class="p-3">jean@example.com</td>
+                                    <td class="p-3">Agent</td>
+                                    <td class="p-3 text-green-600">Actif</td>
+                                    <td class="flex p-3 space-x-2">
+                                        <button class="px-3 py-1 text-white bg-yellow-500 rounded hover:bg-yellow-600">Modifier</button>
+                                        <button class="px-3 py-1 text-white bg-red-600 rounded hover:bg-red-700">Supprimer</button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-3">Marie Lafont</td>
+                                    <td class="p-3">marie@example.com</td>
+                                    <td class="p-3">Client</td>
+                                    <td class="p-3 text-green-600">Actif</td>
+                                    <td class="flex p-3 space-x-2">
+                                        <button class="px-3 py-1 text-white bg-yellow-500 rounded hover:bg-yellow-600">Modifier</button>
+                                        <button class="px-3 py-1 text-white bg-red-600 rounded hover:bg-red-700">Supprimer</button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-3">Luc Martin</td>
+                                    <td class="p-3">luc@example.com</td>
+                                    <td class="p-3">Agent</td>
+                                    <td class="p-3 text-red-600">Inactif</td>
+                                    <td class="flex p-3 space-x-2">
+                                        <button class="px-3 py-1 text-white bg-yellow-500 rounded hover:bg-yellow-600">Modifier</button>
+                                        <button class="px-3 py-1 text-white bg-red-600 rounded hover:bg-red-700">Supprimer</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </main>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
