@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model clients {
+  client_id    String         @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  password     String
+  email        String         @unique
+  reservations reservations[]
+  role         Role           @default(admin)
+}
+
+model reservations {
+  reservation_id String   @id @default(auto()) @map("_id") @db.ObjectId
+  date           DateTime
+  qrCode         String
+
+  client          clients @relation(fields: [clientClient_id], references: [client_id])
+  clientClient_id String  @db.ObjectId
+
+  table         tables @relation(fields: [tableTable_id], references: [table_id])
+  tableTable_id String @db.ObjectId
+}
+
+model tables {
+  table_id     String         @id @default(auto()) @map("_id") @db.ObjectId
+  number       Int            @unique
+  capacity     Int
+  reservations reservations[]
+  state        stat           @default(free)
+}
+
+enum stat {
+  free
+  occupied
+  reserved
+}
+
+enum Role {
+  user
+  admin
+  super_admin
+}
